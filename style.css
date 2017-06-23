@@ -1,0 +1,54 @@
+*,*before,*:after{
+	box-sizing: border-box;
+	position:relative;
+
+}
+html,body{
+	display: flex;
+	justify-content:center; 
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+#home {
+	background: #000;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#home nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+
+	
+}
+#home nav ul {
+	display: flex;
+	list-style: none;
+
+
+
+
+}
+#home nav ul li {
+	border-radius: 20px;
+	background: #FFF;
+	margin-left: 1.68%;
+	color: #00416D;
+	font-size: 0.94em;
+	font-style: normal;
+	text-align: left;
+	line-height: 0.8px;
+	letter-spacing: 0;
+
+
+}
+#home img {
+	width: 50%;
+	padding: 1,27px;
+}

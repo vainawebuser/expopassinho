@@ -1,4 +1,4 @@
-*,*before,*:after{
+*,*:before,*:after{
 	box-sizing: border-box;
 	position:relative;
 
@@ -16,33 +16,26 @@ html,body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 #home nav {
 	width: 100%;
 	position: fixed;
 	top: 0;
 	display: flex;
-	justify-content: center;
-
-	
+	justify-content: center;	
 }
 #home nav ul {
 	width: 100%;
+	padding: 0;
 	display: flex;
 	justify-content: center;
 	position: fixed;
 	list-style: none;
-
-
-
-
-
 }
 #home nav ul li {
 	border-radius: 20px;
 	background: #FFF;
-	margin-left: 1.75%;
+	margin: 0 0.875%;
 	width: 80px;
 	padding: 5px 0;
 
@@ -52,10 +45,81 @@ html,body{
 	text-align: center;
 	line-height: 0.8em;
 	letter-spacing: 0;
-
-
 }
 #home img {
 	width: 50%;
 	padding: 5%;
 }
+.logo {
+	width: 30%;
+	position: relative;
+	top: 3%;
+}
+main #sobre{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+main #sobre .logo {
+	left: -380px;
+}
+main #sobre p{
+	width: 40%;
+}
+main #acoes{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: red;
+}
+main #acoes .logo{
+	left: -380px;
+}
+main #acoes .div-acoes {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	background: blue;
+}
+main #acoes .div-acoes div{
+	width: 45%;
+	padding: 2%;
+	margin:2%;
+	background: yellow;
+}
+
+#contato {
+	background: url(Assets/fundo-footer.jpg) no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#contato .logo {
+	align-self: flex-start;
+	left:-220px;
+}
+#contato div {
+	background: rgba(0,0,0,0.5);
+	width: 25%;
+}
+#contato div h3{
+	/*font-family: sourcesanspro-bold;*/
+	font-size: 1.88em;
+	color:#ffffff;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.61em;
+	letter-spacing: 0em;
+
+}
+
+

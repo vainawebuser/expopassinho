@@ -101,22 +101,28 @@ main #acoes .div-acoes div{
 	height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 #contato .logo {
 	align-self: flex-start;
 	left:-220px;
 
 }
-#contato div {
-	background: rgba(0,0,0,0.5);
+#contato .div-contato {
+	background: rgba(0,0,0,0.7);
 	width: 29%;
 	height: 40%;
-	left: 13%;
-	top: 28%;
-
+	/*left: 13.50%;
+	top: 28%;*/
+	margin-top: 25%;
+	margin-left: 30%;
+	padding: 25px;
+	padding-left: 50px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;	
 }
-#contato div h3{
+#contato .div-contato h3{
 	/*font-family: sourcesanspro-bold;*/
 	font-size: 1.88em;
 	color:#ffffff;
@@ -124,20 +130,24 @@ main #acoes .div-acoes div{
 	text-align: left;
 	line-height: 1.61em;
 	letter-spacing: 0em;
-
+	margin:0;
+	align-self: center;
 }
-#contato div p {
-
+#contato .div-contato p {
     font-size: 1.25em;
     color: #ffffff;
     font-style: normal;
     text-align: left;
     line-height: 1.07em;
     letter-spacing: 0em;
-    margin-left: 5.13%;
+    margin:5px 0;
 }
-
-.icones {
-	width: 13%;
-	margin:1.73%;
+#contato .div-contato div {
+	display: flex;
+	/*flex-flow: row wrap;*/
+	/*background: red;*/
+}
+#contato .div-contato div img{
+	width: 20%;
+	margin: 0 3%;
 }

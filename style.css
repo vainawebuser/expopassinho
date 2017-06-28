@@ -106,10 +106,15 @@ main #acoes .div-acoes div{
 #contato .logo {
 	align-self: flex-start;
 	left:-220px;
+
 }
 #contato div {
 	background: rgba(0,0,0,0.5);
-	width: 25%;
+	width: 29%;
+	height: 40%;
+	left: 13%;
+	top: 28%;
+
 }
 #contato div h3{
 	/*font-family: sourcesanspro-bold;*/
@@ -121,5 +126,18 @@ main #acoes .div-acoes div{
 	letter-spacing: 0em;
 
 }
+#contato div p {
 
+    font-size: 1.25em;
+    color: #ffffff;
+    font-style: normal;
+    text-align: left;
+    line-height: 1.07em;
+    letter-spacing: 0em;
+    margin-left: 5.13%;
+}
 
+.icones {
+	width: 13%;
+	margin:1.73%;
+}

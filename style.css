@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+/*
+	400 - Regular
+	600 - Semi-bold
+	700 - Bold
+*/
 *,*:before,*:after{
 	box-sizing: border-box;
 	position:relative;
@@ -13,9 +19,20 @@ html,body{
 #home {
 	background: #000;
 	width: 100%;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+#home video {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
 }
 #home nav {
 	width: 100%;
@@ -32,13 +49,17 @@ html,body{
 	position: fixed;
 	list-style: none;
 }
-#home nav ul li {
+#home nav ul  a {
+	text-decoration: none;
+	margin: 0 0.875%;
+}
+#home nav ul a li {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	border-radius: 20px;
 	background: #FFF;
-	margin: 0 0.875%;
 	width: 80px;
 	padding: 5px 0;
-
 	color: #00416D;
 	font-size: 0.94em;
 	font-style: normal;
@@ -60,51 +81,95 @@ main #sobre{
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 }
 main #sobre .logo {
 	left: -380px;
 }
+main #sobre h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.88em;
+	color: #95989a;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.61em;
+	letter-spacing:0em;
+
+}
 main #sobre p{
 	width: 40%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #95989a;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.07em;
+	letter-spacing:0em;
 }
+
 main #acoes{
-	min-height: 100vh;
+	min-height: 150vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: red;
+	/*background: red;*/
 }
 main #acoes .logo{
 	left: -380px;
+}
+main #acoes h2{
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.88em;
+	color: #95989a;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.61em;
+	letter-spacing:0em;
+}
+main #acoes p {
+
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #95989a;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.07em;
+	letter-spacing: 0em;
 }
 main #acoes .div-acoes {
 	width: 80%;
 	display: flex;
 	justify-content: center;
-	background: blue;
 }
 main #acoes .div-acoes div{
 	width: 45%;
 	padding: 2%;
 	margin:2%;
-	background: yellow;
+}
+main #acoes .div-acoes video {
+	width: 100%;
+	height: 40%;
 }
 
 #contato {
 	background: url(Assets/fundo-footer.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 }
 #contato .logo {
 	align-self: flex-start;
-	left:-220px;
+	left:-9	0px;
 
 }
 #contato .div-contato {
@@ -123,7 +188,9 @@ main #acoes .div-acoes div{
 	flex-direction: column;	
 }
 #contato .div-contato h3{
-	/*font-family: sourcesanspro-bold;*/
+	
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:700; 	
 	font-size: 1.88em;
 	color:#ffffff;
 	font-style: normal;
@@ -134,6 +201,8 @@ main #acoes .div-acoes div{
 	align-self: center;
 }
 #contato .div-contato p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
     font-size: 1.25em;
     color: #ffffff;
     font-style: normal;
@@ -147,7 +216,17 @@ main #acoes .div-acoes div{
 	/*flex-flow: row wrap;*/
 	/*background: red;*/
 }
-#contato .div-contato div img{
-	width: 20%;
-	margin: 0 3%;
+#contato .div-contato div a{
+	margin: 10px;
+	width: 15%;
+}
+#contato .div-contato div a img{
+	width: 100%;
+	margin: 0%;
+}
+
+@media (max-width: 640px) {
+	body {
+		background: tomato;
+	}
 }

@@ -15,7 +15,16 @@ html,body{
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+	overflow: auto;
+	margin
 }
+@media (max-width: 640px) {
+	body {
+		overflow: hidden;
+		margin: 0;
+	}
+}
+ 
 #home {
 	background: #000;
 	width: 100%;
@@ -49,10 +58,21 @@ html,body{
 	position: fixed;
 	list-style: none;
 }
-#home nav ul  a {
+
+
+#home nav ul a {
 	text-decoration: none;
 	margin: 0 0.875%;
+	display: flex;
+	justify-content: center;
 }
+ @media (max-width: 640px){
+ 	#home nav ul a{
+ 		margin: 1.20%;
+ 		display: flex;
+ 		justify-content: center;
+ 	}
+ }
 #home nav ul a li {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
@@ -67,9 +87,21 @@ html,body{
 	line-height: 0.8em;
 	letter-spacing: 0;
 }
+
+@media(max-width: 640px){
+	#home nav ul a li{
+		padding :7px;
+		width: 70px;
+	}
+}
 #home img {
 	width: 50%;
 	padding: 5%;
+}
+@media (max-width: 640px){
+	#home img {
+		width: 89%;
+	}
 }
 .logo {
 	width: 30%;
@@ -83,6 +115,11 @@ main #sobre{
 	align-items: center;
 	min-height: 100vh;
 	width: 100%;
+}
+@media (max-width: 640px) {
+	#sobre {
+		padding: 1px;
+	}
 }
 main #sobre .logo {
 	left: -380px;
@@ -109,7 +146,13 @@ main #sobre p{
 	line-height: 1.07em;
 	letter-spacing:0em;
 }
-
+@media (max-width: 640px) {
+	#sobre p {
+		font-size: 0.88em;
+		line-height: 0.75em;
+		margin: 
+	}
+}
 main #acoes{
 	min-height: 150vh;
 	width: 100%;

@@ -119,6 +119,7 @@ main #sobre{
 @media (max-width: 640px) {
 	#sobre {
 		padding: 1px;
+		background: #fff;
 	}
 }
 main #sobre .logo {
@@ -135,6 +136,7 @@ main #sobre h2 {
 	letter-spacing:0em;
 
 }
+
 main #sobre p{
 	width: 40%;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -145,14 +147,17 @@ main #sobre p{
 	text-align: left;
 	line-height: 1.07em;
 	letter-spacing:0em;
+	
 }
 @media (max-width: 640px) {
-	#sobre p {
-		font-size: 0.88em;
-		line-height: 0.75em;
-		margin: 
+	main #sobre p{
+	 
+		width: 100%;
+		text-align: left;
+		padding: 7.68%;
+		margin: -4%;
+		}
 	}
-}
 main #acoes{
 	min-height: 150vh;
 	width: 100%;
@@ -160,10 +165,18 @@ main #acoes{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*background: red;*/
+	background: #fff;
+	
+}
+@media (max-width: 640px){
+	main #acoes {
+		width: 
+		background: #fff;
+	}
 }
 main #acoes .logo{
 	left: -380px;
+
 }
 main #acoes h2{
 	margin: 0;
@@ -175,6 +188,21 @@ main #acoes h2{
 	text-align: left;
 	line-height: 1.61em;
 	letter-spacing:0em;
+}
+
+main #acoes h3{
+	
+}
+@media (max-width: 640px){
+	main #acoes h3{
+		font-size: 1.56em;
+		color: #95989a;
+		font-style: normal;
+		text-align: left;
+		line-height: 1.34em;
+		letter-spacing: 0em;
+		width: 80%;
+	}
 }
 main #acoes p {
 
@@ -192,14 +220,33 @@ main #acoes .div-acoes {
 	display: flex;
 	justify-content: center;
 }
+@media (max-width: 640px) {
+	main #acoes .div-acoes  {
+		width: 95.28%;
+		
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
 main #acoes .div-acoes div{
 	width: 45%;
 	padding: 2%;
 	margin:2%;
+
+}
+@media (max-width: 640px) {
+	main #acoes .div-acoes div {
+		width: 95.28%;
+		height: 80%;
+		
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 main #acoes .div-acoes video {
 	width: 100%;
 	height: 40%;
+
 }
 
 #contato {
@@ -230,6 +277,14 @@ main #acoes .div-acoes video {
 	justify-content: center;
 	flex-direction: column;	
 }
+@media (max-width: 640px){
+	#contato .div-contato {
+		width: 95%;
+		line-height: 55%;
+		right: 30%;
+
+	}
+}
 #contato .div-contato h3{
 	
 	font-family: 'Source Sans Pro', sans-serif;
@@ -254,6 +309,12 @@ main #acoes .div-acoes video {
     letter-spacing: 0em;
     margin:5px 0;
 }
+@media (max-width: 640px) {
+	#contato .div-contato p{
+		right: 12%;
+
+	}
+}
 #contato .div-contato div {
 	display: flex;
 	/*flex-flow: row wrap;*/
@@ -268,8 +329,14 @@ main #acoes .div-acoes video {
 	margin: 0%;
 }
 
+@media (max-width: 640px)
+{
+	#contato .div-contato div a img {
+
+	}
+}
 @media (max-width: 640px) {
 	body {
-		background: tomato;
+		;
 	}
 }

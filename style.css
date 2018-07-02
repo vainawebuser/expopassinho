@@ -7,24 +7,21 @@
 *,*:before,*:after{
 	box-sizing: border-box;
 	position:relative;
-
 }
-html,body{
+body{
 	display: flex;
 	justify-content:center; 
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
 	overflow: auto;
-	margin
-}
-@media (max-width: 640px) {
-	body {
-		overflow: hidden;
-		margin: 0;
+	margin:0;
+} 
+@media (max-width: 640px){
+	body{
+			
 	}
 }
- 
 #home {
 	background: #000;
 	width: 100%;
@@ -32,68 +29,48 @@ html,body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 #home video {
-	position: absolute;
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
 	height: auto;
-	/*right: 0;*/
+	position: absolute;
 	bottom: 0;
 	background-size: cover;
 }
 #home nav {
 	width: 100%;
-	z-index: 1;
-	position: fixed;
-	top: 0;
-	display: flex;
-	justify-content: center;	
-}
-#home nav ul {
-	width: 100%;
 	padding: 0;
-	display: flex;
-	justify-content: center;
 	position: fixed;
-	list-style: none;
-}
-
-
-#home nav ul a {
-	text-decoration: none;
-	margin: 0 0.875%;
+	top: 5px;
+	z-index: 1;
 	display: flex;
 	justify-content: center;
 }
- @media (max-width: 640px){
- 	#home nav ul a{
- 		margin: 1.20%;
- 		display: flex;
- 		justify-content: center;
- 	}
- }
-#home nav ul a li {
+#home nav a {
+	width: 100px;
+	padding: 10px 0;
+	margin: 0.875%;
+	border: solid #888 1px;
+	border-radius: 20px;
+	background: #FFF;
+	text-decoration: none;
+	text-align: center;
+	color: #00416D;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	border-radius: 20px;
-	border: solid #888 1px;
-	background: #FFF;
-	width: 80px;
-	padding: 5px 0;
-	color: #00416D;
 	font-size: 0.94em;
 	font-style: normal;
-	text-align: center;
 	line-height: 0.8em;
 	letter-spacing: 0;
 }
-
-@media(max-width: 640px){
-	#home nav ul a li{
-		padding :7px;
+@media (max-width: 640px){
+	#home nav a{
 		width: 70px;
+		margin: 1.20%;
+		padding: 7px;
 	}
 }
 #home img {
@@ -110,6 +87,9 @@ html,body{
 	width: 30%;
 	position: relative;
 	top: 3%;
+}
+main{
+	width: 100%;
 }
 main #sobre{
 	display: flex;
@@ -162,21 +142,16 @@ main #sobre p{
 		}
 	}
 main #acoes{
-	min-height: 150vh;
 	width: 100%;
+	min-height: 150vh;
+	margin-bottom: 5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background: #fff;
-	
 }
-@media (max-width: 640px){
-	main #acoes {
-		width: 
-		background: #fff;
-	}
-}
+
 main #acoes .logo{
 	left: -380px;
 
@@ -194,21 +169,21 @@ main #acoes h2{
 }
 
 main #acoes h3{
-	
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 1.56em;
+	color: #95989a;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.34em;
+	letter-spacing: 0em;
 }
 @media (max-width: 640px){
 	main #acoes h3{
-		font-size: 1.56em;
-		color: #95989a;
-		font-style: normal;
-		text-align: left;
-		line-height: 1.34em;
-		letter-spacing: 0em;
 		width: 80%;
 	}
 }
 main #acoes p {
-
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: 1.25em;
@@ -226,30 +201,49 @@ main #acoes .div-acoes {
 @media (max-width: 640px) {
 	main #acoes .div-acoes  {
 		width: 95.28%;
-		
 		display: flex;
 		flex-wrap: wrap;
 	}
 }
 main #acoes .div-acoes div{
 	width: 45%;
+	max-width: 660px;
 	padding: 2%;
 	margin:2%;
 
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
 	main #acoes .div-acoes div {
 		width: 95.28%;
-		height: 80%;
-		
+		max-width: 600px;
+		min-height: 80%;
 		display: flex;
 		flex-wrap: wrap;
 	}
 }
-main #acoes .div-acoes video {
+main #acoes .div-acoes iframe {
 	width: 100%;
 	height: 40%;
-
+}
+@media (min-width: 1500px) {
+	main #acoes .div-acoes iframe {
+		height: 55%;
+	}
+}
+@media (max-width: 992px) {
+	main #acoes .div-acoes iframe {
+		height: 20vh;
+	}
+}
+@media (max-width: 768px) {
+	main #acoes .div-acoes iframe {
+		height: 35vh;
+	}
+}
+@media (max-width: 576px) {
+	main #acoes .div-acoes iframe {
+		height: 27vh;
+	}
 }
 
 #contato {
@@ -258,66 +252,61 @@ main #acoes .div-acoes video {
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 @media (max-width: 640px){
 	#contato {
-	background-position: center;
+		background-position: center;
 	}
 }
 #contato .logo {
-	align-self: flex-start;
-	left:-9	0px;
-
+	left: -308px;
 }
 #contato .div-contato {
-	background: rgba(0,0,0,0.7);
-	width: 29%;
-	height: 40%;
-	/*left: 13.50%;
-	top: 28%;*/
-	margin-top: 25%;
-	margin-left: 30%;
-	padding: 25px;
-	padding-left: 50px;
+	min-height: 25%;
+	padding: 2% 3%;
+	margin-right: 8%;
 	border-radius: 20px;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	bottom: 25%;
+	right: 0;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+	align-items: center;
 	flex-direction: column;	
 }
-@media (max-width: 640px){
+@media (max-width: 425px){
 	#contato .div-contato {
 		width: 95%;
-		line-height: 55%;
-		right: 30%;
-		
-
+		padding: 5% 10%;
+		/*padding-left: 50px;*/
+		margin-top: 25%;
+		right: auto;
 	}
 }
 #contato .div-contato h3{
-	
+	width: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:700; 	
 	font-size: 1.88em;
 	color:#ffffff;
 	font-style: normal;
-	text-align: left;
+	text-align: center;
 	line-height: 1.61em;
 	letter-spacing: 0em;
 	margin:0;
-	align-self: center;
 }
-@media (max-width: 640px) {
+@media (max-width: 425px) {
 	#contato .div-contato h3 {
-		display: flex;
-		justify-content: flex-start;
-		align-self: flex-start;
-		top:2%;
-		right: 10%;
+		text-align: left;
 	}
 }
 
 #contato .div-contato p {
+	width: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
     font-size: 1.25em;
@@ -328,30 +317,23 @@ main #acoes .div-acoes video {
     letter-spacing: 0em;
     margin:5px 0;
 }
-@media (max-width: 640px) {
-	#contato .div-contato p{
-		margin: 3%;
-		top: 5%;
-		right: 10%;
-		align-content: space-around;
-	}
-}
 #contato .div-contato .email{
 	font-size: 1em;
 }
 #contato .div-contato div {
+	width: 100%;
 	display: flex;
-	/*flex-flow: row wrap;*/
-	/*background: red;*/
 }
 #contato .div-contato div a{
-	margin: 10px;
-	width: 15%;
+	width: 25%;
+	min-width: 60px; 
+	max-width: 70px;
+	margin-top: 10px;
+	margin-right: 20px;
 }
-@media (max-width: 640px){
-	#contato .div-contato div a{
-		top:-1px;
-		margin: 8px;
+@media (max-width: 425px){
+	#contato .div-contato div{
+		justify-content: center;
 	}
 }
 #contato .div-contato div a img{
@@ -359,16 +341,31 @@ main #acoes .div-acoes video {
 	margin: 0%;
 }
 
-@media (max-width: 640px)
-{
-	#contato .div-contato div a img {
-		width: 120%;
-		margin: 50%;
-		
-	}
+/*footer Vai na Web */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,700');
+.vnw{ 
+	width: 100%;
+    height: 40px;
+	background: #f16337;
+	position: absolute;
+	bottom:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
-@media (max-width: 640px) {
-	body {
-		;
-	}
+.vnw__text{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	font-size: 16px;
+    color: #30368c;
+}
+.vnw__link{
+	font-weight: 700;
+    color: #30368c;
+}
+@media (max-width: 768px){
+	.vnw__text{
+        font-size: 12px;
+    }
 }
